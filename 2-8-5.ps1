@@ -20,4 +20,8 @@ $Array = @()
     foreach ($file in $FilesList){$Array += $file}
 $Array
 
+$Example = New-Object 'Collections.Generic.List[object]'
+Get-ChildItem -Path "C:\Resources" -Recurse | ForEach-Object{$Example.Add($_)}
+$Example
+
 
