@@ -12,8 +12,8 @@ $String3= "$($String2) $($String1)"
 $String3
 
 $StartingString = "The house is gray and the sky is blue"
-<# $String4= "$($StartingString.Substring(0,13))blue $($StartingString.Substring(18,15))gray" #>
-<#$String4 ="$($StartingString.Substring(0,13))$($StartingString.Substring($StartingString.Length -4))$($StartingString.Substring(17,16))$($StartingString.Substring(13,5))" #>
+#$String4= "$($StartingString.Substring(0,13))blue $($StartingString.Substring(18,15))gray"
+#$String4 ="$($StartingString.Substring(0,13))$($StartingString.Substring($StartingString.Length -4))$($StartingString.Substring(17,16))$($StartingString.Substring(13,5))"
 $String4 = $StartingString.Replace("gray","1")
 $String4 = $String4.Replace("blue","2")
 $String4 = $String4.Replace("1","blue")
