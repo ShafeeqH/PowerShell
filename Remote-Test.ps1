@@ -3,8 +3,8 @@ Remove-PSSession -id 2  #Remove the Session
 
 
 
-Invoke-Command -ComputerName 'Client02' -ScriptBlock {Get-HotFix} -Credential $(Get-Credential) -AsJob
-get-job | Where-Object {$._Location -eq 'Client02'} | Receive-Job
+Invoke-Command -ComputerName 'ADM-V-SCCM01' -ScriptBlock {Get-HotFix} -Credential $(Get-Credential) -AsJob
+get-job | Where-Object {$_.Location -eq 'ADM-V-SCCM01'} | Receive-Job
 
 
 
